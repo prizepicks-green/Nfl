@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Join our Discord | PrizePicks-Green</title>
+<meta http-equiv="refresh" content="2; url=https://discord.gg/YOUR_INVITE_CODE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F8FB; --surface:#FFFFFF; --ink:#0E1A2B; --muted:#4F5D73; --line:#DCE3ED;
+  --accent:#0B7A3B; --accent-ink:#FFFFFF; --lane:rgba(14,26,43,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0C1422;--surface:#142033;--ink:#F1F5FA;--muted:#A6B3C7;--line:#243349;--accent:#2EE06F;--accent-ink:#0C1422;--lane:rgba(255,255,255,.05)}
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;display:flex;flex-direction:column;min-height:100%;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  background:var(--bg);color:var(--ink);font-family:Barlow,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55}
+.wrap{width:100%;max-width:1000px;margin:0 auto;padding:0 24px}
+header{padding:22px 0}
+.brand{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-style:italic;font-weight:800;font-size:26px}
+main{flex:1;display:flex;align-items:center;
+  background:repeating-linear-gradient(115deg,transparent 0 46px,var(--lane) 46px 50px);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+main .wrap{padding-top:48px;padding-bottom:56px}
+h1{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-style:italic;font-weight:800;
+  font-size:clamp(48px,11vw,96px);line-height:.92;margin:0 0 20px;max-width:12ch}
+.sub{color:var(--muted);font-size:19px;margin:0 0 28px;max-width:42ch}
+.bar{height:6px;max-width:360px;background:var(--line);border-radius:999px;overflow:hidden;margin-bottom:28px}
+.bar span{display:block;height:100%;width:100%;background:var(--accent);transform-origin:left;animation:fill 2s linear forwards}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.cta{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:18px;padding:16px 30px;border-radius:999px}
+.cta:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.note{display:block;margin-top:14px;font-size:15px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.bar span{animation:none;transform:none}}
+</style>
+<script>
+  setTimeout(function () {
+    window.location.replace("https://discord.gg/YOUR_INVITE_CODE");
+  }, 2000);
+</script>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">PrizePicks-Green</div></div></header>
+
+<main>
+  <div class="wrap">
+    <h1>Taking you to Discord.</h1>
+    <p class="sub">Hang tight. You'll be sent to our free server in a few seconds.</p>
+    <div class="bar" aria-hidden="true"><span></span></div>
+    <a class="cta" href="https://discord.gg/YOUR_INVITE_CODE" rel="noopener">Join now</a>
+    <span class="note">Nothing happening? Tap the button.</span>
+  </div>
+</main>
+</body>
+</html>
